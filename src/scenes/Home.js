@@ -1,13 +1,23 @@
-import React from 'react' 
-import Menu from '../components/Menu'
+import React from 'react'
+import { Layout } from 'antd'
+import NavMenu from '../components/Menu'
+import Welcome from '../components/Welcome'
+import Message from '../components/Message'
 import Footer from '../components/Footer'
 
 function Home() {
   return (
     <React.Fragment>
-      <Menu />
-      <h1>HOME</h1>
-      <Footer />
+      <Layout.Header>
+        <NavMenu />
+      </Layout.Header>
+      <Layout.Content style={{ padding: '16px 40px', textAlign: 'center' }}>
+        <Welcome age={25} name="Jan" />
+        <Message />
+      </Layout.Content>
+      <Layout.Footer style={{ textAlign: 'center' }}>
+        <Footer />
+      </Layout.Footer>
     </React.Fragment>
     )
 }
