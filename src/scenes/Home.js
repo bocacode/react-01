@@ -16,8 +16,8 @@ function Home() {
       <Layout.Content style={{ padding: '16px 40px', textAlign: 'center' }}>
         <Welcome age={25} name="Jan" />
         <Clicker />
-        <Coffees />
         <Message />
+        <Coffees />
       </Layout.Content>
       <Layout.Footer style={{ textAlign: 'center' }}>
         <Footer />
